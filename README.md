@@ -1,13 +1,15 @@
-# Sample Hardhat Project
+# ClippedNFT
 
-This project demonstrates a basic Hardhat use case. It comes with a sample contract, a test for that contract, and a script that deploys that contract.
+ライブ動画の切り抜きは人気コンテンツですが、管理やお金の問題が顕著です。
 
-Try running some of the following tasks:
+そこで、私たちはNFT化した動画同士を紐づけて親子関係を示しました。元動画が親、切り抜き動画が子です。
 
-```shell
-npx hardhat help
-npx hardhat test
-REPORT_GAS=true npx hardhat test
-npx hardhat node
-npx hardhat run scripts/deploy.js
-```
+親のContract AddressとトークンIDを指定すると、それぞれのコレクションのオーナーや、NFTホルダー、ライセンス、ロイヤリティがすぐわかる見た目も用意しました。
+
+ライセンス契約やロイヤリティ支払いが簡単になると、子孫繁栄のように二次創作が盛んになるはず。ライセンスを参照されながら広がり、ロイヤリティ獲得が可能です。また、それを誰でも確認できます。
+
+従来の手法は(1)コレクションの作成者とそのNFTホルダー、(2)NFTホルダー同士のライセンスのみを示したものです。
+
+一方で提案した規格は、親子それぞれのコレクションの作成者とそのNFTホルダーについて網羅的にライセンスが結べます。さらに、参照先が複数ある場合にも対応可能です。この規格は画像生成AIなどの他の例でも応用できます。
+
+このライセンス契約の承認プロセスなどを今後パッケージ化することで、自律分散的なコンテンツ制作と還元を促進できると考えています。
